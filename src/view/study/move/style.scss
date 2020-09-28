@@ -1,0 +1,41 @@
+.move-wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #ccc;
+  margin: 100px auto;
+  .move-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    .move-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      img{
+        width: 30px;
+        height: 30px;
+        animation: trun 0.5s linear infinite;
+      }
+      .move-title{
+        color: #ccc;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@keyframes trun {
+  0%{
+    transform: rotate(0)
+  };
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
